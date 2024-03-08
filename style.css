@@ -1,0 +1,296 @@
+*{
+    margin:0px;
+}
+header{
+    display:flex;
+    background: linear-gradient(to right, #FF007F, #E30A5C);
+}
+
+.header{
+    display: flex;
+    color:white;
+    margin-left: 250px;
+}
+.header a{
+    color:white;
+    margin-top: 22px;
+}
+#header{
+    margin-top: 22px;
+}
+.vertical-line {
+    height: 65px;
+    width: 2px;
+    background-color:white; 
+    margin: 0 20px;
+}
+.box{
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color:white;
+    border:2px solid white;
+    border-radius: 25px;
+    padding:10px;
+}
+nav{
+    display:flex;
+}
+nav h1{
+    font-family: 'Ostwald',sans-serif;
+    margin-top: 22px;
+    margin-left: 10px;
+    margin-right: 200px;
+}
+.navbar{
+    display: flex;
+    margin-top: 22px;
+}
+.navbar a{
+    font-family: 'Ostwald',sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color:black;
+}
+.logo{
+    margin-left: 270px;
+}
+.buy{
+    display:flex;
+    background-color: orange;
+    color:black;
+    margin-top: 0px;
+    padding:10px;
+}
+.buys{
+    font-family: 'Ostwald',sans-serif;
+    margin-top: 12px;
+    text-decoration: none;
+    color:black;
+}
+.image-container {
+    position: relative;
+    display: inline-block; 
+    background: linear-gradient(to right, #FF007F, #E30A5C);
+    vertical-align: top;
+  }
+  
+.image-container img {
+    display: block;
+    width: 1350px; 
+    height: 500px;
+    border: none;
+  }
+  
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  .text-overlay h1,.text-overlay h2{
+    font-family: "Ostwald",sans-serif;
+    margin-top: 100px;
+  }
+.middle{
+    background: linear-gradient(to right, #FF007F, #E30A5C);
+    display:flex;
+    justify-content: center;
+    margin-top: 0px;
+    border: none;
+    margin-bottom: 50px;
+}
+.photo{
+    margin-top: 22px;
+    margin-left: 50px;
+    font-family: "Ostwald",sans-serif;
+    margin-bottom: 40px;
+}
+.photo i{
+    margin: 10px;
+    padding: 4px;
+    border:2px solid white;
+    border-radius: 50px;
+}
+.photo p{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.body{
+    text-align: center;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    font-family: "Ostwald",sans-serif;
+    margin-bottom: 20px;
+}
+.content{
+    font-family: "Ostwald",sans-serif;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 100px;
+}
+.content h2{
+    margin-bottom: 5px;
+}
+.content p{
+    margin-bottom: 20px;
+}
+.content a{
+    text-decoration: none;
+    color:white;
+    font-family: "Ostwald",sans-serif;
+    padding: 20px;
+    margin:20px;
+    border:2px solid transparent;
+    border-radius: 50px;
+    background: linear-gradient(to right, #FF007F, #E30A5C);
+    transition: transform 0.3s ease-in-out;
+}
+.content a:hover{
+    transform: scale(1.05);
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.card {
+    width: 30%;
+}
+.card img{
+    transition: transform 0.3s ease-in-out;
+}
+.card img:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid transparent;
+    border-radius: 11px;
+}
+.button {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 70px;
+    background: linear-gradient(to right, #FF007F, #E30A5C);
+    color: white;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+}
+.header a, .navbar a, .content a, .button, .buys {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+/* Existing CSS */
+
+/* Add below existing styles */
+
+@media only screen and (max-width: 768px) {
+    /* Stack navbar links vertically on smaller screens */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0; /* Adjust spacing */
+    }
+
+    /* Adjust logo and navbar spacing for smaller screens */
+    .logo {
+        margin: 20px 0; /* Give some top and bottom margin */
+        width: 50px; /* Adjust logo size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    nav h1 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        margin: 0 10px; /* Adjust margin */
+    }
+
+    .buy, .buys {
+        padding: 5px; /* Reduce padding */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    /* Make the hero image responsive */
+    .image-container img {
+        width: 100%; /* Make image width responsive */
+        height: auto; /* Adjust height automatically */
+    }
+
+    /* Adjust the text overlay for better readability on smaller devices */
+    .text-overlay h1, .text-overlay h2 {
+        font-size: 18px; /* Reduce font size */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    /* Adjust about section layout */
+    .about {
+        flex-direction: column-reverse; /* Stack vertically on smaller screens */
+    }
+
+    .content, .images {
+        margin: 20px; /* Adjust margin for spacing */
+        text-align: center; /* Center align the text */
+    }
+
+    .content h2, .content p, .content a {
+        font-size: 14px; /* Adjust text size for readability */
+    }
+
+    .content a {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    /* Services cards adjustment */
+    .services {
+        flex-direction: column; /* Stack service cards vertically */
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for smaller screens */
+        margin: 10px auto; /* Center align cards */
+    }
+
+    .card img {
+        height: auto; /* Adjust image height automatically */
+    }
+}
+
+/* This media query block adjusts the layout for very small devices */
+@media only screen and (max-width: 480px) {
+    .header, #header {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0; /* Reset margin left */
+    }
+
+    .vertical-line {
+        display: none; /* Hide vertical lines in the header for smaller screens */
+    }
+}
